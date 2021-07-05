@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.comment-input,
+.comment-button,
+.reply-input,
+.reply-button{
+    padding: 10px;
+    font-size: 17px;
+    margin: 10px;
+    border:2px solid black;
+}
+
+.comments-reply-container{
+    display: none;
+}
+
+.show-reply-container{
+    display: block;
+    box-shadow: 0 0 0px 1px rgb(63 63 68 / 5%), 0 1px 10px 3px rgb(63 63 68 / 15%);
+    padding:10px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    z-index: 999;
+}
+
+.comments-container{
+    margin: 10px;
+}
+
+.comment{
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
